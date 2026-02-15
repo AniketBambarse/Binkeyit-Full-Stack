@@ -20,12 +20,16 @@ const addressSchema = new mongoose.Schema({
         type: String
     },
     mobile: {
-        type: String,
+        type: Number,
         default: null
     },
     status: {
         type: Boolean,
         default: true
+    },
+    userId: {
+        type: mongoose.Schema.ObjectId,
+        default: ""
     }
 }, {
     timestamps: true
